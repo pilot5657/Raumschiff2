@@ -13,7 +13,7 @@ class Settings:
     inner_rect = pygame.Rect(
     100, 100, screen_width - 200, screen_height - 200)
     fps = 60 # Bilder pro sekunde /  Frames per second
-    
+    pygame.display.set_caption("Das Rauschiff-Game")
     file_path = os.path.dirname(os.path.abspath(__file__)) # Datei Pfad /   File Path
     image_path = os.path.join(file_path,"images") # Was für eine Art Dateityp wird importiert /  What kind of file type is imported
     def get_dim(): # Dimme den Bildschirm /  Dim the screen
